@@ -1,0 +1,22 @@
+
+
+/* Class = "UILabel"; text = "Your Peak Brain Map"; ObjectID = "8Nd-SH-ju6"; */
+"8Nd-SH-ju6.text" = "你的Peak头脑地图";
+
+/* Class = "UILabel"; text = "Review and compare how you are performing in each skill category."; ObjectID = "AyF-LE-eX5"; */
+"AyF-LE-eX5.text" = "回顾和比较您在每个技能分类的表现";
+
+/* Class = "UILabel"; text = "Peak Brain Score"; ObjectID = "IjB-20-bvg"; */
+"IjB-20-bvg.text" = "Peak头脑分数";
+
+/* Class = "UISegmentedControl"; Ysi-w9-q6W.segmentTitles[0] = "You"; ObjectID = "Ysi-w9-q6W"; */
+"Ysi-w9-q6W.segmentTitles[0]" = "你";
+
+/* Class = "UISegmentedControl"; Ysi-w9-q6W.segmentTitles[1] = "Age group"; ObjectID = "Ysi-w9-q6W"; */
+"Ysi-w9-q6W.segmentTitles[1]" = "年龄层";
+
+/* Class = "UISegmentedControl"; Ysi-w9-q6W.segmentTitles[2] = "Profession"; ObjectID = "Ysi-w9-q6W"; */
+"Ysi-w9-q6W.segmentTitles[2]" = "职业";
+
+/* Class = "UINavigationItem"; title = "Your Performance"; ObjectID = "xMM-zI-oPH"; */
+"xMM-zI-oPH.title" = "你的表现";

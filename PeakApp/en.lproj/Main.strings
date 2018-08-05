@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Your Peak Brain Map"; ObjectID = "8Nd-SH-ju6"; */
+"8Nd-SH-ju6.text" = "Your Peak Brain Map";
+
+/* Class = "UILabel"; text = "Review and compare how you are performing in each skill category."; ObjectID = "AyF-LE-eX5"; */
+"AyF-LE-eX5.text" = "Review and compare how you are performing in each skill category.";
+
+/* Class = "UILabel"; text = "Peak Brain Score"; ObjectID = "IjB-20-bvg"; */
+"IjB-20-bvg.text" = "Peak Brain Score";
+
+/* Class = "UISegmentedControl"; Ysi-w9-q6W.segmentTitles[0] = "You"; ObjectID = "Ysi-w9-q6W"; */
+"Ysi-w9-q6W.segmentTitles[0]" = "You";
+
+/* Class = "UISegmentedControl"; Ysi-w9-q6W.segmentTitles[1] = "Age group"; ObjectID = "Ysi-w9-q6W"; */
+"Ysi-w9-q6W.segmentTitles[1]" = "Age group";
+
+/* Class = "UISegmentedControl"; Ysi-w9-q6W.segmentTitles[2] = "Profession"; ObjectID = "Ysi-w9-q6W"; */
+"Ysi-w9-q6W.segmentTitles[2]" = "Profession";
+
+/* Class = "UINavigationItem"; title = "Your Performance"; ObjectID = "xMM-zI-oPH"; */
+"xMM-zI-oPH.title" = "Your Performance";

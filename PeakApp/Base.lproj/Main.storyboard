@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rc9-2E-5Co">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamSSm-Light.ttf">
+            <string>GothamSSm-Light</string>
+        </array>
+        <array key="GothamSSm-Medium.ttf">
+            <string>GothamSSm-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="fYx-qn-IYU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Rc9-2E-5Co" customClass="ViewController" customModule="PeakApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5G6-Zy-9eE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rn-L9-oUo">
+                                <rect key="frame" x="0.0" y="16" width="320" height="44"/>
+                                <color key="barTintColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Your Performance" id="xMM-zI-oPH">
+                                        <barButtonItem key="rightBarButtonItem" image="down_arrow" style="plain" id="Pws-Ha-j0f">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Peak Brain Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nd-SH-ju6">
+                                <rect key="frame" x="73" y="80" width="174.5" height="19"/>
+                                <fontDescription key="fontDescription" name="GothamSSm-Medium" family="Gotham SSm" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review and compare how you are performing in each skill category." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyF-LE-eX5">
+                                <rect key="frame" x="20" y="107" width="280" height="34"/>
+                                <fontDescription key="fontDescription" name="GothamSSm-Light" family="Gotham SSm" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-w9-q6W">
+                                <rect key="frame" x="20" y="161" width="280" height="29"/>
+                                <segments>
+                                    <segment title="You"/>
+                                    <segment title="Age group"/>
+                                    <segment title="Profession"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="tabIndexDidchange:" destination="Rc9-2E-5Co" eventType="valueChanged" id="nHk-Di-M9p"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-aV-dB9">
+                                <rect key="frame" x="20" y="246" width="280" height="286"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peak Brain Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjB-20-bvg">
+                                <rect key="frame" x="98" y="209" width="124" height="17"/>
+                                <fontDescription key="fontDescription" name="GothamSSm-Light" family="Gotham SSm" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qU-52-yO2">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="pV3-WU-0Dz"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="action" id="9Sr-Aa-7ai">
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHARE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n8-ag-Ehl">
+                                <rect key="frame" x="44" y="542" width="44.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9Zg-pf-91X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamSSm-Light" family="Gotham SSm" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Udh-8q-PC2" firstAttribute="trailing" secondItem="iZX-aV-dB9" secondAttribute="trailing" constant="20" id="0lH-AV-sYz"/>
+                            <constraint firstItem="7qU-52-yO2" firstAttribute="top" secondItem="iZX-aV-dB9" secondAttribute="bottom" id="11C-62-rDc"/>
+                            <constraint firstItem="IjB-20-bvg" firstAttribute="top" secondItem="Ysi-w9-q6W" secondAttribute="bottom" constant="20" id="6In-5d-fU2"/>
+                            <constraint firstItem="iZX-aV-dB9" firstAttribute="leading" secondItem="Udh-8q-PC2" secondAttribute="leading" constant="20" id="K4c-ro-kyX"/>
+                            <constraint firstItem="Ysi-w9-q6W" firstAttribute="top" secondItem="AyF-LE-eX5" secondAttribute="bottom" constant="20" id="K6Y-h7-aDz"/>
+                            <constraint firstItem="IjB-20-bvg" firstAttribute="centerX" secondItem="5G6-Zy-9eE" secondAttribute="centerX" id="L3m-9e-Gck"/>
+                            <constraint firstItem="Ysi-w9-q6W" firstAttribute="leading" secondItem="Udh-8q-PC2" secondAttribute="leading" constant="20" id="L43-NT-eT4"/>
+                            <constraint firstItem="Udh-8q-PC2" firstAttribute="bottom" secondItem="4n8-ag-Ehl" secondAttribute="bottom" constant="6" id="QA2-4y-zQP"/>
+                            <constraint firstItem="8Rn-L9-oUo" firstAttribute="trailing" secondItem="Udh-8q-PC2" secondAttribute="trailing" id="TEc-GF-oVH"/>
+                            <constraint firstItem="8Rn-L9-oUo" firstAttribute="leading" secondItem="Udh-8q-PC2" secondAttribute="leading" id="YQh-yz-xJd"/>
+                            <constraint firstItem="8Rn-L9-oUo" firstAttribute="top" secondItem="5G6-Zy-9eE" secondAttribute="top" constant="16" id="cay-mp-vRw"/>
+                            <constraint firstItem="iZX-aV-dB9" firstAttribute="top" secondItem="IjB-20-bvg" secondAttribute="bottom" constant="20" id="duG-b8-rR5"/>
+                            <constraint firstAttribute="trailing" secondItem="AyF-LE-eX5" secondAttribute="trailing" constant="20" id="eRu-fG-FTH"/>
+                            <constraint firstItem="7qU-52-yO2" firstAttribute="bottom" secondItem="5G6-Zy-9eE" secondAttribute="bottom" id="fA2-Ho-OKP"/>
+                            <constraint firstItem="8Nd-SH-ju6" firstAttribute="centerX" secondItem="5G6-Zy-9eE" secondAttribute="centerX" id="foK-Ib-bSC"/>
+                            <constraint firstItem="8Nd-SH-ju6" firstAttribute="top" secondItem="8Rn-L9-oUo" secondAttribute="bottom" constant="20" id="g7S-x9-qso"/>
+                            <constraint firstItem="7qU-52-yO2" firstAttribute="leading" secondItem="5G6-Zy-9eE" secondAttribute="leading" id="gKL-4x-GSk"/>
+                            <constraint firstItem="AyF-LE-eX5" firstAttribute="leading" secondItem="Udh-8q-PC2" secondAttribute="leading" constant="20" id="mSd-lB-xb0"/>
+                            <constraint firstItem="Udh-8q-PC2" firstAttribute="trailing" secondItem="Ysi-w9-q6W" secondAttribute="trailing" constant="20" id="pKY-7K-0Gn"/>
+                            <constraint firstItem="7qU-52-yO2" firstAttribute="trailing" secondItem="5G6-Zy-9eE" secondAttribute="trailing" id="pXI-BY-s3n"/>
+                            <constraint firstItem="AyF-LE-eX5" firstAttribute="top" secondItem="8Nd-SH-ju6" secondAttribute="bottom" constant="8" id="puD-gJ-rFY"/>
+                            <constraint firstItem="4n8-ag-Ehl" firstAttribute="leading" secondItem="Udh-8q-PC2" secondAttribute="leading" constant="44" id="u0K-sx-8uE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Udh-8q-PC2"/>
                     </view>
+                    <connections>
+                        <outlet property="radarParentView" destination="iZX-aV-dB9" id="nOv-gH-TOU"/>
+                        <outlet property="topBar" destination="8Rn-L9-oUo" id="W8O-01-Ixk"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkQ-gM-fwV" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="132.04225352112675"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="down_arrow" width="64" height="64"/>
+    </resources>
 </document>
